@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinfast COntact</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/lgo daif.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="news2.html">Tin tức</a></li>
+                    <li><a href="./introduction.html">Giới thiệu</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                    <li><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- ------------Account-page------------------- -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/car-lux-a/CE14.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Đăng nhập</span>
+                            <span onclick="register()">Đăng Ký</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn"><a href="info.html">Đăng nhập</a></button>
+                            
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Đăng ký</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Trải nghiệm Vinfast trên điện thoại di động</h3>
+                <p>Tải trên hai nền tảng Android và IOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/lgo daif.png">
+                <p>Mãnh liệt tinh thần Việt Nam</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Quyền riêng tư và Bảo Mật</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li> Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Bản quyền thuộc về Trần Đình Minh Vương D14CNPM6</p>
+    </div>
+</div>
+        <!-- ------------------- js for toggle menu-------------- -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+
+        </script>
+        <!-- ------------------- js for Account form-------------- -->
+
+        <script>
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+
+            function register() {
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+
+            }
+            function login() {
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+
+
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newdail.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/lgo daif.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="news2.html">Tin tức</a></li>
+                        <li><a href="./introduction.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                        <li><a href="account.html">Tài khoản</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+
+        </div>
+    </div>
+<!-- News detal -->
+<div class="NEW">
+    <h1>VinFast tung 3 mẫu xe điện tự lái, sử dụng công nghệ trí tuệ nhân tạo AI</h1>
+    <br>
+    <br>
+    <p>
+        TTO - Ngày 22-1, VinFast công bố 3 dòng xe SUV điện thông minh, sử dụng công nghệ trí tuệ nhân tạo với những tính năng thông minh vượt trội. Khách hàng trong nước có thể đặt hàng từ tháng 5 tới và chờ đến tháng 11-2021 để nhận xe.
+    </p>
+    
+    <br>
+    <p>Mẫu xe Việt làm được điều mà xe Nhật không thể, khi lật đổ được sự thống trị phân khúc xe đô thị cỡ A của Hyundai i10.
+
+        Tháng 1/2021, Fadil dẫn đầu phân khúc hatchback cỡ A với 1.746 xe tiêu thụ. Hyundai i10 xếp thứ hai, bán 1.393 xe. Trước đó vào 2020, tổng lượng bán ra của Fadil đạt 18.016 xe, nhỉnh hơn 447 xe so với i10. Đây là lần đầu tiên trong 5 năm qua, ngôi vương phân khúc này không thuộc một trong hai thương hiệu Hàn Quốc là Hyundai và Kia.</p>
+
+     <br>
+     
+     <img src="./images/tt1.jpg" alt="">
+     <br>   
+     <p>
+            Đại diện VinFast cho biết chỉ sau 3 năm đi vào hoạt động, VinFast đã nghiên cứu và phát triển thành công ba dòng xe thông minh đầu tiên là VF31, VF32, VF33, trong đó VF31 là dòng SUV cỡ vừa (phân khúc C) và chỉ có một phiên bản xe điện, VF32 là xe SUV cỡ trung (phân khúc D), VF33 là xe SUV cỡ đại (phân khúc E). VF32 và VF33 mỗi xe đều có 2 phiên bản điện và xăng.
+        </p>
+
+        <br>
+        <img src="./images/tt2.jpg" alt="">
+        <br>
+        <p>
+            Trong 2021, Hyundai i10 nhiều khả năng sẽ được TC Motor ra mắt thị trường. Sức ép từ Fadil ngày càng hiện hữu hơn khi tháng 1 vừa qua, i10 tiếp tục để mất ngôi vương vào tay đối thủ. Doanh số Hyundai i10 nếu cộng thêm Kia Morning, vẫn đủ sức giúp xe Hàn làm chủ cuộc chơi ở phân khúc xe giá rẻ nhất thị trường. Nhưng với việc vươn lên bán chạy nhất thời gian gần đây, Fadil trở thành thách thức không nhỏ của hai mẫu xe Hàn Quốc tại Việt Nam.
+        </p>
+
+    </div>
+
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Trải nghiệm Vinfast trên điện thoại di động</h3>
+                <p>Tải trên hai nền tảng Android và IOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/lgo daif.png">
+                <p>Mãnh liệt tinh thần Việt Nam</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Quyền riêng tư và Bảo Mật</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Bản quyền thuộc về Trần Đình Minh Vương D14CNPM6</p>
+    </div>
+</div>
+    <!-- ------------------- js for toggle menu-------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "300px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

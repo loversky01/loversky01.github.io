@@ -1,0 +1,884 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(85, 83, 83);
+}
+
+
+/* CSS cho thanh Menu */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    color: whitesmoke;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+
+.btn{
+    display: inline-block;
+    background: #0e0d0d;
+    color: rgb(211, 202, 202);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;    
+}
+
+.btn:hover{
+    background: #7a5e5e;
+
+}
+
+.header{
+    background: radial-gradient(rgb(70, 69, 69), #333);
+
+}
+
+.header row{
+    margin-top: 70px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+.title::after{
+    content: '';
+    background: #2600ff;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: rgb(204, 191, 191);
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/* --------- offer ---------- */
+.offer{
+    background: radial-gradient(rgb(104, 97, 97),#353434);
+    margin-top: 80px;
+    padding: 35px 0;   
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: rgb(0, 0, 0);
+}
+
+/* ---------------footer------------ */
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.Copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* ---------------All Products Page------------------- */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.row-2 select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+.row-2 select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+/* -- ---------- single Products detail ----------- -- */
+.single-product{
+    margin-top: 80px;
+
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523f;
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-rol{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* -----------------Chi tiết giỏ hàng------------------- - */
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: rgb(255, 5, 109);
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3xp solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+.th:last-child{
+    text-align: right;
+}
+
+
+/* -----------------------Đăng nhập-Đăng Ký------------------ */
+
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(rgb(156, 156, 156),#ffd6d6);
+
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    display: inline;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#LoginForm{
+    left: -300px;
+}
+
+#RegForm{
+    left: 0;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#Indicator{
+    width: 105px;
+    border: none;
+    background: #000000;
+    height: 5px;
+    margin-top: 10px;
+    transform: translateX(50px);
+    transition: transform 1s;
+}
+
+
+
+/* -------Tin tuc------- */
+
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.blog{
+	background-color:black;
+	padding:30px;
+}
+.blog h1{
+	text-align: center;
+	font-size:60px;
+	color:white;
+	margin:1.5 0px;
+}
+
+.card > h2{
+	color:white;
+margin:1.5 0px;	
+}
+.card p {
+    color: black;
+}
+.card a{
+    color: aqua;
+}
+.card a:hover{
+    color: rgb(0, 17, 255);
+}
+
+.left-column{
+float: left;
+width: 75%;	
+
+}
+
+.right-column{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+}
+.card{
+	padding: 20px;
+	background-color: gray;
+    margin-top:20px;
+}
+
+.card img{
+	width: 100%;
+}
+
+
+.right-column .card img{
+	margin-bottom: 10px;
+}
+
+/*------------ Chi tiet tin tuc------------- */
+.NEW{
+    margin-top: 30px;
+    padding: 100px 100px;
+    background-color: white;
+    height: auto;
+}
+
+.NEW p{
+    color: black;
+}
+
+.NEW h1{
+    text-align: center;
+}
+
+.NEW img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     max-width:800px;
+     max-height:400px;
+     width: auto;
+     height: auto;
+}
+
+
+
+/* Contact Liên hệ */
+
+/* Kiểu Đầu vào  */
+input[type=text],.row select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Tạo kiểu cho vùng chứa / phần liên hệ */
+  .ntainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .ntainer p{
+      color: #000;
+  }
+  /* Tạo hai cột nổi cạnh nhau */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Xóa số nổi sau các cột */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+
+  /* -----------Thông tin cá nhân----------- */
+  
+  .formcontainer{
+    background: gray;
+  /* background: #fec107; */
+  padding: 150px 10px;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #3327996b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #93b6d3;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+
+/* --------------Media query---------------------------- */
+
+
+/* --------------- Media query for 800 -------------- */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .NEW{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+
+    .left-column,.right-column{
+        width: 100%;
+        padding: 0px;
+        }
+}
+
+
+/* --------------- Media query FOR less than 600 screen  -------------- */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+  
+  
+    .NEW{
+      width: 100%;
+      padding: 20px;
+      
+  }
+  
+  .NEW img{
+      width: 100%;
+  }    
+  
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .left-column,.right-column{
+    width: 100%;
+    padding: 0px;
+	}
+  }
+  
+
+  /* Responsive thông tin cá nhân  */
+@media (max-width:420px) {
+    .wrapper .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }

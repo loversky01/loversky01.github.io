@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Vinfast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./images/lgo daif.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="news2.html">Tin tức</a></li>
+                <li><a href="./introduction.html">Giới thiệu</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+
+
+
+<!-- Main News -->
+ <div class="blog">
+    <h1>Tin Tức</h1>
+</div>
+<div class="row">
+    <div class="left-column">
+      <div class="card">
+        <h2>VinFast tung 3 mẫu xe điện tự lái, sử dụng công nghệ trí tuệ nhân tạo AI</h2>
+        <h5>Lover Sky, Tháng 7, 2020</h5>
+        <img src="./images/blog1.jpg" alt="blog "/>
+        <p>TTO - Ngày 22-1, VinFast công bố 3 dòng xe SUV điện thông minh,
+             sử dụng công nghệ trí tuệ nhân tạo với những tính năng thông minh vượt trội.
+              Khách hàng trong nước có thể đặt hàng từ tháng 5 tới và chờ đến tháng 11-2021 để nhận xe.</p>
+        <p><a href="news_detal.html">Đọc tiếp</a></p>
+      </div>
+      <div class="card">
+        <h2>Có 300 triệu đồng nên mua ôtô nào?</h2>
+        <h5>Lover Sky, Tháng 7, 2110</h5>
+        <img src="./images/blog2.jpg" alt="blog "/>
+        <p>
+           Mua xe cũ, đời sau hay xe mới, trả góp là câu hỏi luôn khiến những người mua ôtô lần đầu hoặc có tài chính quanh mức 300 triệu đồng phải đắn đo, nâng lên đặt xuống.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-column">
+        <div class="card">
+             <h2>VinFast nâng tầm đẳng cấp với President</h2>
+             <img src="./images/about-me.jpg" alt="me"/>Đại diện Vingroup vừa cho biết, VinFast President đủ tố chất của một mẫu SUV hiệu năng cao, trang bị hệ thống an toàn tiêu chuẩn châu Âu.</p>
+        </div>
+        <div class="card">
+             <h3>Hình ảnh phổ biến</h3>
+             <img src="./images/popular-blog1.jpg" alt="popular"/>
+             <img src="./images/popular-blog3.jpg" alt="popular"/>
+             <img src="./images/popular-blog2.jpg" alt="popular"/>
+        </div>
+    </div>
+</div>
+ <!-- footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Trải nghiệm Vinfast trên điện thoại di động</h3>
+                <p>Tải trên hai nền tảng Android và IOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/lgo daif.png">
+                <p>Mãnh liệt tinh thần Việt Nam</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Quyền riêng tư và Bảo Mật</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Bản quyền thuộc về Trần Đình Minh Vương D14CNPM6</p>
+    </div>
+</div>
+        <!-- ------------------- js for toggle menu-------------- -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+
+        </script>
+</body>
+
+</html>
