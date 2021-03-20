@@ -168,7 +168,7 @@ h4{
     padding: 50px;
 }
 small{
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 /* ---------------footer------------ */
@@ -222,6 +222,7 @@ ul{
 
 .app-logo img{
     width: 140px;
+   
 }
 
 .footer hr{
@@ -821,6 +822,10 @@ input[type=text],.row select, textarea {
         width: 100%;
         padding: 0px;
         }
+
+    .footer-col-4  {
+            margin: auto;
+        }
 }
 
 
@@ -839,7 +844,7 @@ input[type=text],.row select, textarea {
         padding: 20px 0;
     }
     .single-product h1{
-        font-size: 26px;
+        font-size: 25px;
         line-height: 32px;
     }
     .cart-info p{
@@ -881,4 +886,6 @@ input[type=text],.row select, textarea {
     .wrapper .form .inputfield.terms{
       flex-direction: row;
     }
+
+   
   }
