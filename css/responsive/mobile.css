@@ -1,0 +1,61 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .movie-card {
+        padding: 10px;
+    }
+
+    .movie-img {
+        height: 250px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));  /* Cột nhỏ hơn cho màn hình vừa */
+    }
+
+    .movie-card {
+        height: auto;  /* Cho phép card tự động điều chỉnh chiều cao */
+    }
+
+    .movie-img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Cột nhỏ hơn cho màn hình di động */
+        padding: 20px 10px;  /* Giảm padding cho màn hình nhỏ */
+    }
+
+    .pagination {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .pagination a {
+        font-size: 1em;  /* Giảm kích thước chữ cho các nút phân trang */
+    }
+
+    .movie-card {
+        height: auto;  /* Cho phép card tự động điều chỉnh chiều cao */
+    }
+
+    .movie-img {
+        height: 200px;
+    }
+}

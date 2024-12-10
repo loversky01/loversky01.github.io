@@ -1,0 +1,10 @@
+/* Color Definitions */
+:root {
+    --primary-color:white;
+    --secondary-color: #222;
+    --tertiary-color: #f0f0f0;
+    --hover-color: #f40612;
+    --text-color-light: #fff;
+    --text-color-dark: #bbb;
+    --background-color: #141414;
+}

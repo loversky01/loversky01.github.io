@@ -1,0 +1,13 @@
+/* Import All Styles */
+@import url('./base/reset.css');
+@import url('./base/fonts.css');
+@import url('./base/colors.css');
+@import url('./base/layout.css');
+@import url('./components/header.css');
+@import url('./components/footer.css');
+@import url('./components/movie-card.css');
+@import url('./components/buttons.css');
+@import url('./components/episode.css');
+@import url('./components/banner.css');
+@import url('./responsive/mobile.css');
+@import url('./search.css');

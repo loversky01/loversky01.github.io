@@ -1,0 +1,30 @@
+/* Button Styles */
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-play {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+.btn-play:hover {
+    background-color: var(--hover-color);
+}
+
+.btn-details {
+    background-color: #333;
+    color: var(--text-color-light);
+}
+
+.btn-details:hover {
+    background-color: #444;
+}

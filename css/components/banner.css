@@ -1,0 +1,57 @@
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 60px 20px;  /* Thêm padding trên và dưới để tạo không gian */
+    position: relative;
+    height: 750px;  /* Tăng chiều cao để banner có diện tích rộng hơn */
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Lớp phủ bán trong suốt */
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  /* Lớp phủ giúp làm nổi bật văn bản */
+    z-index: 1;
+}
+
+/* Văn bản */
+.banner h1, .banner p {
+    position: relative;
+    z-index: 2;
+    margin: 0;  /* Xóa margin mặc định */
+}
+
+/* Tiêu đề */
+.banner h1 {
+    font-size: 3em;  /* Tăng kích thước tiêu đề cho nổi bật */
+    margin-bottom: 10px;
+    letter-spacing: 1px;  /* Thêm khoảng cách giữa các chữ cái */
+    text-transform: uppercase;  /* Chữ hoa cho tiêu đề */
+}
+
+/* Mô tả */
+.banner p {
+    font-size: 1.25em;  /* Tăng kích thước chữ mô tả */
+    font-style: italic;  /* Chữ nghiêng */
+    font-weight: 300;  /* Tạo kiểu nhẹ nhàng cho mô tả */
+}
+
+/* Responsive Design - Điều chỉnh cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.2em;  /* Giảm kích thước tiêu đề cho màn hình nhỏ */
+    }
+
+    .banner p {
+        font-size: 1.1em;  /* Giảm kích thước mô tả cho màn hình nhỏ */
+    }
+}
